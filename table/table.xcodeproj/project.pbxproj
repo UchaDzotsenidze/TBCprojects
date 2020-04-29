@@ -14,7 +14,8 @@
 		48A5C32924597A3400382110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A5C32824597A3400382110 /* Assets.xcassets */; };
 		48A5C32C24597A3400382110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A5C32A24597A3400382110 /* LaunchScreen.storyboard */; };
 		48A5C3342459B3B200382110 /* tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A5C3332459B3B200382110 /* tableview.swift */; };
-		48A5C33A2459B6A200382110 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A5C3392459B6A200382110 /* TableController.swift */; };
+		48A5C33C2459BFD200382110 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A5C33B2459BFD200382110 /* data.swift */; };
+		48A5C33E2459C4A700382110 /* tableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A5C33D2459C4A700382110 /* tableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		48A5C32B24597A3400382110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48A5C32D24597A3400382110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48A5C3332459B3B200382110 /* tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableview.swift; sourceTree = "<group>"; };
-		48A5C3392459B6A200382110 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		48A5C33B2459BFD200382110 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		48A5C33D2459C4A700382110 /* tableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 				48A5C32A24597A3400382110 /* LaunchScreen.storyboard */,
 				48A5C32D24597A3400382110 /* Info.plist */,
 				48A5C3332459B3B200382110 /* tableview.swift */,
-				48A5C3392459B6A200382110 /* TableController.swift */,
+				48A5C33B2459BFD200382110 /* data.swift */,
+				48A5C33D2459C4A700382110 /* tableController.swift */,
 			);
 			path = table;
 			sourceTree = "<group>";
@@ -146,8 +149,9 @@
 			files = (
 				48A5C32424597A3200382110 /* ViewController.swift in Sources */,
 				48A5C3342459B3B200382110 /* tableview.swift in Sources */,
+				48A5C33E2459C4A700382110 /* tableController.swift in Sources */,
 				48A5C32024597A3200382110 /* AppDelegate.swift in Sources */,
-				48A5C33A2459B6A200382110 /* TableController.swift in Sources */,
+				48A5C33C2459BFD200382110 /* data.swift in Sources */,
 				48A5C32224597A3200382110 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

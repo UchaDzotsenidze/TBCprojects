@@ -67,6 +67,9 @@
                                 <state key="normal" title="რეგისტრაცია">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickregistration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L3p-o1-mfk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="რეგისტრაცია" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjv-zS-Rv7">
                                 <rect key="frame" x="10" y="44" width="259" height="56"/>
@@ -97,6 +100,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emaillabel" destination="kzH-hw-fX4" id="bbC-Za-pi3"/>
+                        <outlet property="givennamefield" destination="qXX-LH-9Qi" id="gBe-c3-Fj0"/>
+                        <outlet property="namefield" destination="8IS-Ik-YuX" id="EnN-Ui-lBp"/>
                         <segue destination="5AD-Up-egu" kind="show" identifier="mySegue" id="9tb-6e-s8V"/>
                     </connections>
                 </viewController>
@@ -115,6 +121,20 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="waE-Tv-MHL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userinfo" rowHeight="167" id="Smp-I8-XM0" customClass="t">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Smp-I8-XM0" id="nnG-xq-aiY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5AD-Up-egu" id="HvY-92-Ptx"/>
+                                    <outlet property="delegate" destination="5AD-Up-egu" id="DEO-8B-5QB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -130,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jhd-vq-uMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.91304347826099" y="139.95535714285714"/>
+            <point key="canvasLocation" x="1156.521739130435" y="133.92857142857142"/>
         </scene>
     </scenes>
 </document>
