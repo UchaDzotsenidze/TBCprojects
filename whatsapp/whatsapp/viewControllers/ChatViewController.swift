@@ -72,12 +72,24 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let  VC = storyboard.instantiateViewController(identifier: "All_info")
-                
+        guard let  VC = storyboard.instantiateViewController(identifier: "All_info") as? Allinfo else { return }
         
+        VC.allmessagelabel.text = chatsarr[indexPath.row].text
+        VC.allnamelabel.text = chatsarr[indexPath.row].text
+                    
         self.navigationController?.pushViewController(VC, animated: true)
+        
+        
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let Id = segue.identifier, Id == "show_id" {
+//            if let instance = segue.destination as? Allinfo{
+//                instance.allmessagelabel.text = chatsarr
+//            }
+//        }
+//
+//    }
     
 }
 
