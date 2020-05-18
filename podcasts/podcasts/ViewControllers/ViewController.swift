@@ -113,6 +113,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         let request: NSFetchRequest<PodCast> = PodCast.fetchRequest()
         //request.predicate = NSPredicate(format: "time < %@", timeFilter as CVarArg)
 
+    
        
         do{
             let result = try context.fetch(request)
