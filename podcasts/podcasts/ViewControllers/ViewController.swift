@@ -64,7 +64,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         
         let context = AppDelegate.coredatacontainer.viewContext
 
-                let request: NSFetchRequest<PodCast> = PodCast.fetchRequest()
+                
 
                 do{
                     let result = try context.fetch(request)
@@ -118,7 +118,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         do{
             let result = try context.fetch(request)
 
-            let pod = result as? [NSManagedObject]
+            
             
 //            for item in pod!{
 //                if let p = item as? PodCast{
