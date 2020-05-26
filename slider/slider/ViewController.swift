@@ -44,7 +44,8 @@ class ViewController: UIViewController {
             resultLabel.text = resultsarray[2]
         }
         
-        var newnumber = Int.random(in: 9...100)
+        randomint = Int.random(in: 9...100)
+        
     }
     
     

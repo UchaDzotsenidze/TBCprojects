@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="androidvsios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-Al-8HB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="362"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="362" id="5Ht-az-Nu3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ax-TM-5gR">
+                                <rect key="frame" x="40" y="414" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="k0V-NQ-7i4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dou-hT-Ero">
+                                <rect key="frame" x="100" y="634" width="214" height="60"/>
+                                <color key="backgroundColor" red="0.39623569019999999" green="0.38267000699999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BeP-ay-Cgv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Choose platform">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onChooseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDb-hU-Ge2"/>
+                                    <segue destination="Zqt-oF-ytS" kind="show" id="NWB-TX-ker"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Hy-Al-8HB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="53y-IK-VQk"/>
+                            <constraint firstItem="2Hy-Al-8HB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5or-ZW-pkB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dou-hT-Ero" secondAttribute="bottom" constant="168" id="Mk4-AB-N2S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dou-hT-Ero" secondAttribute="trailing" constant="100" id="RPL-3t-sbL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Ax-TM-5gR" secondAttribute="trailing" constant="40" id="T6n-cG-bSK"/>
+                            <constraint firstItem="1Ax-TM-5gR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="X0W-Sh-sYg"/>
+                            <constraint firstItem="Dou-hT-Ero" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="YLK-JZ-Eta"/>
+                            <constraint firstItem="1Ax-TM-5gR" firstAttribute="top" secondItem="2Hy-Al-8HB" secondAttribute="bottom" constant="8" id="eYS-Qz-5G8"/>
+                            <constraint firstItem="2Hy-Al-8HB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yrv-Lw-ZtU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MainLabel" destination="1Ax-TM-5gR" id="EO9-z6-hsU"/>
+                        <outlet property="MainimageView" destination="2Hy-Al-8HB" id="clU-CJ-Iza"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.34782608695653" y="136.60714285714286"/>
+        </scene>
+        <!--Select View Controller-->
+        <scene sceneID="Gpj-0z-cUt">
+            <objects>
+                <viewController storyboardIdentifier="Select_view" id="Zqt-oF-ytS" customClass="SelectViewController" customModule="androidvsios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="biQ-24-Wb1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzC-06-Fzx">
+                                <rect key="frame" x="140" y="230" width="134" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="0rQ-ZJ-gGZ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="1200px-Android_robot.svg"/>
+                                <connections>
+                                    <action selector="onAndroidClick:" destination="Zqt-oF-ytS" eventType="touchUpInside" id="Xmf-c9-IdG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your platform" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZT-Ji-qPc">
+                                <rect key="frame" x="40" y="70" width="334" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="K3j-yK-DoU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcf-3O-iJk">
+                                <rect key="frame" x="70" y="411" width="274" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="YPa-eu-s56"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="iOS-7-10-Emblem"/>
+                                <connections>
+                                    <action selector="onIosClick:" destination="Zqt-oF-ytS" eventType="touchUpInside" id="PMj-gk-JIo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SZT-Ji-qPc" firstAttribute="leading" secondItem="Lzm-Zc-aoX" secondAttribute="leading" constant="40" id="0dh-V8-TMr"/>
+                            <constraint firstItem="Lzm-Zc-aoX" firstAttribute="trailing" secondItem="JzC-06-Fzx" secondAttribute="trailing" constant="140" id="7hh-JC-exL"/>
+                            <constraint firstItem="Fcf-3O-iJk" firstAttribute="leading" secondItem="Lzm-Zc-aoX" secondAttribute="leading" constant="70" id="LUQ-2v-ZB1"/>
+                            <constraint firstItem="JzC-06-Fzx" firstAttribute="leading" secondItem="Lzm-Zc-aoX" secondAttribute="leading" constant="140" id="W9N-wV-Orr"/>
+                            <constraint firstItem="Lzm-Zc-aoX" firstAttribute="bottom" secondItem="Fcf-3O-iJk" secondAttribute="bottom" constant="257" id="bmf-4a-mvP"/>
+                            <constraint firstItem="SZT-Ji-qPc" firstAttribute="top" secondItem="Lzm-Zc-aoX" secondAttribute="top" constant="70" id="du8-72-BW9"/>
+                            <constraint firstItem="Lzm-Zc-aoX" firstAttribute="trailing" secondItem="SZT-Ji-qPc" secondAttribute="trailing" constant="40" id="nAl-6L-JGQ"/>
+                            <constraint firstItem="JzC-06-Fzx" firstAttribute="top" secondItem="SZT-Ji-qPc" secondAttribute="bottom" constant="100" id="oaI-cn-Nka"/>
+                            <constraint firstItem="Lzm-Zc-aoX" firstAttribute="trailing" secondItem="Fcf-3O-iJk" secondAttribute="trailing" constant="70" id="tg3-IF-f68"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lzm-Zc-aoX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4xe-8a-nnk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gb6-gQ-2dT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1200px-Android_robot.svg" width="1200" height="1408"/>
+        <image name="iOS-7-10-Emblem" width="1800" height="833"/>
+    </resources>
+</document>

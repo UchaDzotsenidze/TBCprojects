@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		488EAD65247D5CF200A6FA25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EAD64247D5CF200A6FA25 /* AppDelegate.swift */; };
+		488EAD67247D5CF200A6FA25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EAD66247D5CF200A6FA25 /* SceneDelegate.swift */; };
+		488EAD69247D5CF200A6FA25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EAD68247D5CF200A6FA25 /* ViewController.swift */; };
+		488EAD6C247D5CF200A6FA25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488EAD6A247D5CF200A6FA25 /* Main.storyboard */; };
+		488EAD6F247D5CF200A6FA25 /* androidvsios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 488EAD6D247D5CF200A6FA25 /* androidvsios.xcdatamodeld */; };
+		488EAD71247D5CF300A6FA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488EAD70247D5CF300A6FA25 /* Assets.xcassets */; };
+		488EAD74247D5CF300A6FA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488EAD72247D5CF300A6FA25 /* LaunchScreen.storyboard */; };
+		488EAD7C247D5EB700A6FA25 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488EAD7B247D5EB700A6FA25 /* SelectViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		488EAD61247D5CF200A6FA25 /* androidvsios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = androidvsios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		488EAD64247D5CF200A6FA25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		488EAD66247D5CF200A6FA25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		488EAD68247D5CF200A6FA25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		488EAD6B247D5CF200A6FA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		488EAD6E247D5CF200A6FA25 /* androidvsios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = androidvsios.xcdatamodel; sourceTree = "<group>"; };
+		488EAD70247D5CF300A6FA25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		488EAD73247D5CF300A6FA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		488EAD75247D5CF300A6FA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488EAD7B247D5EB700A6FA25 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		488EAD5E247D5CF100A6FA25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		488EAD58247D5CF100A6FA25 = {
+			isa = PBXGroup;
+			children = (
+				488EAD63247D5CF200A6FA25 /* androidvsios */,
+				488EAD62247D5CF200A6FA25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		488EAD62247D5CF200A6FA25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				488EAD61247D5CF200A6FA25 /* androidvsios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		488EAD63247D5CF200A6FA25 /* androidvsios */ = {
+			isa = PBXGroup;
+			children = (
+				488EAD64247D5CF200A6FA25 /* AppDelegate.swift */,
+				488EAD66247D5CF200A6FA25 /* SceneDelegate.swift */,
+				488EAD6A247D5CF200A6FA25 /* Main.storyboard */,
+				488EAD70247D5CF300A6FA25 /* Assets.xcassets */,
+				488EAD72247D5CF300A6FA25 /* LaunchScreen.storyboard */,
+				488EAD75247D5CF300A6FA25 /* Info.plist */,
+				488EAD6D247D5CF200A6FA25 /* androidvsios.xcdatamodeld */,
+				488EAD68247D5CF200A6FA25 /* ViewController.swift */,
+				488EAD7B247D5EB700A6FA25 /* SelectViewController.swift */,
+			);
+			path = androidvsios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		488EAD60247D5CF100A6FA25 /* androidvsios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488EAD78247D5CF300A6FA25 /* Build configuration list for PBXNativeTarget "androidvsios" */;
+			buildPhases = (
+				488EAD5D247D5CF100A6FA25 /* Sources */,
+				488EAD5E247D5CF100A6FA25 /* Frameworks */,
+				488EAD5F247D5CF100A6FA25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = androidvsios;
+			productName = androidvsios;
+			productReference = 488EAD61247D5CF200A6FA25 /* androidvsios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		488EAD59247D5CF100A6FA25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Ucha Dzotsenidze";
+				TargetAttributes = {
+					488EAD60247D5CF100A6FA25 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 488EAD5C247D5CF100A6FA25 /* Build configuration list for PBXProject "androidvsios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 488EAD58247D5CF100A6FA25;
+			productRefGroup = 488EAD62247D5CF200A6FA25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				488EAD60247D5CF100A6FA25 /* androidvsios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		488EAD5F247D5CF100A6FA25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488EAD74247D5CF300A6FA25 /* LaunchScreen.storyboard in Resources */,
+				488EAD71247D5CF300A6FA25 /* Assets.xcassets in Resources */,
+				488EAD6C247D5CF200A6FA25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		488EAD5D247D5CF100A6FA25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488EAD7C247D5EB700A6FA25 /* SelectViewController.swift in Sources */,
+				488EAD69247D5CF200A6FA25 /* ViewController.swift in Sources */,
+				488EAD65247D5CF200A6FA25 /* AppDelegate.swift in Sources */,
+				488EAD6F247D5CF200A6FA25 /* androidvsios.xcdatamodeld in Sources */,
+				488EAD67247D5CF200A6FA25 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		488EAD6A247D5CF200A6FA25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				488EAD6B247D5CF200A6FA25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		488EAD72247D5CF300A6FA25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				488EAD73247D5CF300A6FA25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		488EAD76247D5CF300A6FA25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		488EAD77247D5CF300A6FA25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		488EAD79247D5CF300A6FA25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2R4TXFXZ9;
+				INFOPLIST_FILE = androidvsios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uchadzotsenidze.androidvsios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		488EAD7A247D5CF300A6FA25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2R4TXFXZ9;
+				INFOPLIST_FILE = androidvsios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uchadzotsenidze.androidvsios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		488EAD5C247D5CF100A6FA25 /* Build configuration list for PBXProject "androidvsios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488EAD76247D5CF300A6FA25 /* Debug */,
+				488EAD77247D5CF300A6FA25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488EAD78247D5CF300A6FA25 /* Build configuration list for PBXNativeTarget "androidvsios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488EAD79247D5CF300A6FA25 /* Debug */,
+				488EAD7A247D5CF300A6FA25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		488EAD6D247D5CF200A6FA25 /* androidvsios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				488EAD6E247D5CF200A6FA25 /* androidvsios.xcdatamodel */,
+			);
+			currentVersion = 488EAD6E247D5CF200A6FA25 /* androidvsios.xcdatamodel */;
+			path = androidvsios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 488EAD59247D5CF100A6FA25 /* Project object */;
+}
