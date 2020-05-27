@@ -26,6 +26,7 @@ class HystoryViewController: UIViewController {
 }
 
 extension HystoryViewController: UITableViewDelegate, UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let context = AppDelegate.coredatacontainer.viewContext
         
