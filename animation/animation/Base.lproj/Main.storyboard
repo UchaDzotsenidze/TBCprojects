@@ -15,8 +15,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fq-4h-Cbx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Man With Flag" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-B9-nRi">
+                                        <rect key="frame" x="8" y="127" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="6iE-46-PBp" appends="YES" id="jrN-ot-0xG"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Woman At Board" translatesAutoresizingMaskIntoConstraints="NO" id="2mK-gJ-Zww">
+                                        <rect key="frame" x="118" y="127" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="L2Q-dh-Wif" appends="YES" id="tmS-J4-Fq7"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Globe" translatesAutoresizingMaskIntoConstraints="NO" id="5GR-65-Q3J">
+                                        <rect key="frame" x="231" y="127" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="B8Z-xa-pmy" appends="YES" id="WV8-vB-6a1"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom Boom" translatesAutoresizingMaskIntoConstraints="NO" id="BCF-iE-BzZ">
+                                        <rect key="frame" x="341" y="127" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Fjv-2X-Yld" appends="YES" id="GV7-GI-0Lp"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-Sb-Q9g">
+                                        <rect key="frame" x="374" y="44" width="25" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="gE2-Rp-qQg" appends="YES" id="oB3-ba-NNm"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeo-42-76B">
+                                        <rect key="frame" x="8" y="43" width="110" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="l8D-on-PUH"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xCE-ym-MWe">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="200" width="414" height="662"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Main_cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Main_cell" rowHeight="82" id="JmT-2T-KwA" customClass="TableViewCell" customModule="animation" customModuleProvider="target">
@@ -65,19 +121,62 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xCE-ym-MWe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CdJ-WQ-tLI"/>
-                            <constraint firstItem="xCE-ym-MWe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QU1-sP-TjE"/>
+                            <constraint firstItem="8fq-4h-Cbx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GAU-td-til"/>
+                            <constraint firstItem="xCE-ym-MWe" firstAttribute="top" secondItem="8fq-4h-Cbx" secondAttribute="bottom" id="adN-tt-UfL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xCE-ym-MWe" secondAttribute="bottom" id="csf-S4-GIA"/>
+                            <constraint firstItem="8fq-4h-Cbx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fk7-jz-qbe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xCE-ym-MWe" secondAttribute="trailing" id="ga1-id-sy5"/>
+                            <constraint firstItem="8fq-4h-Cbx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jhC-PE-UIU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="BoomImage" destination="BCF-iE-BzZ" id="Pos-hA-RBu"/>
+                        <outlet property="ChooseItemLabel" destination="xeo-42-76B" id="Dyh-bO-Y7T"/>
+                        <outlet property="GlobeImage" destination="5GR-65-Q3J" id="TjR-Wq-iGg"/>
                         <outlet property="MainTableView" destination="xCE-ym-MWe" id="fbw-rr-qzr"/>
+                        <outlet property="MainView" destination="8fq-4h-Cbx" id="Or9-1W-dgi"/>
+                        <outlet property="ManWithFlagImage" destination="8hb-B9-nRi" id="O9c-KJ-Qls"/>
+                        <outlet property="WomanAtBoardImage" destination="2mK-gJ-Zww" id="FGF-o6-Uok"/>
+                        <outlet property="addimage" destination="fYb-Sb-Q9g" id="c6k-UY-xjw"/>
+                        <outlet property="height" destination="l8D-on-PUH" id="0IW-dI-tTw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gE2-Rp-qQg" userLabel="addclick">
+                    <connections>
+                        <action selector="onAddClick:" destination="BYZ-38-t0r" id="toL-xC-PDi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6iE-46-PBp" userLabel="manclick">
+                    <connections>
+                        <action selector="onManClick:" destination="BYZ-38-t0r" id="dvB-OJ-N90"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="L2Q-dh-Wif" userLabel="womanclick">
+                    <connections>
+                        <action selector="onWomanClick:" destination="BYZ-38-t0r" id="wWV-61-KRy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="B8Z-xa-pmy" userLabel="globe">
+                    <connections>
+                        <action selector="onGlobeClick:" destination="BYZ-38-t0r" id="ApZ-qy-pbT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Fjv-2X-Yld" userLabel="boom ">
+                    <connections>
+                        <action selector="onBoom:" destination="BYZ-38-t0r" id="R8G-TP-dxW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Boom Boom" width="512" height="512"/>
+        <image name="Globe" width="512" height="512"/>
+        <image name="Man With Flag" width="512" height="512"/>
+        <image name="Woman At Board" width="512" height="512"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
 </document>
